@@ -29,39 +29,39 @@ function Header() {
           <nav>
             <ul className="flex space-x-6 mr-20">
               <li>
-                <a href="/" className="hover:text-yellow-500">
+                <Link to="/" className="hover:text-yellow-500">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/event" className="hover:text-yellow-500">
+                <Link to="/event" className="hover:text-yellow-500">
                   Event
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/world" className="hover:text-yellow-500">
+                <Link to="/world" className="hover:text-yellow-500">
                   World
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/ethiopia" className="hover:text-yellow-500">
+                <Link to="/ethiopia" className="hover:text-yellow-500">
                   Ethiopia
-                </a>
+                </Link>
               </li>
               <li className="group relative cursor-pointer">
-                <a href="/#home" className="flex  items-center gap-[2px]">
+                <Link to="/quiz" className="flex  items-center gap-[2px]">
                   Other{" "}
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block  ">
                   <ul className="space-y-3">
                     {DropdownLinks.map((data) => (
                       <li key={data.name}>
-                        <a
+                        <Link
                           className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                          href={data.link}
+                          to={data.link}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -69,9 +69,9 @@ function Header() {
               </li>
 
               <li>
-                <a href="/faq" className="hover:text-yellow-500">
+                <Link to="/faq" className="hover:text-yellow-500">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
